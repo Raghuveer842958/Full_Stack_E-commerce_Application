@@ -1,0 +1,40 @@
+1. User Management
+   1).->POST /user/register: Register a new user.✅
+   2).->POST /user/login: Authenticate a user and return a JWT.✅
+   3).->POST /user/logout: Invalidate the user session.✅
+   4).->GET /user/profile/:id: Get the profile information of a user.✅
+   5).->PUT /user/profile/:id: Update user profile details.✅
+
+2. Product Management
+   1).->POST /products: Add a new product (admin only).✅
+   2).->GET /products: Get a list of all products.✅
+   3).->GET /products/:id: Get details of a specific product.✅
+   4).->PUT /products/:id: Update product details (admin only).✅
+   5).->DELETE /products/:id: Delete a product (admin only).✅
+
+3. Category Management
+   1).->POST /categories: Create a new category (admin only).✅
+   2).->GET /categories: Get all categories.✅
+   3).->GET /categories/:id: Get a specific category.✅
+   4).->PUT /categories/:id: Update a category (admin only).✅
+   5).->DELETE /categories/:id: Delete a category (admin only).✅
+
+4. Shopping Cart
+   1).->POST /cart: Add an item to the shopping cart.✅
+   2).->GET /cart: Get the current user's shopping cart.✅
+   3).->PUT /cart/:itemId: Update the quantity of an item in the cart.✅
+   4).->DELETE /cart/:itemId: Remove an item from the cart.✅
+
+5. Order Management
+   1).->POST /orders: Create a new order.✅
+   2).->GET /orders: Get all orders for the logged-in user.✅
+   3).->GET /orders/:id: Get details of a specific order.✅
+   4).->PUT /orders/:id: Update the status of an order (admin only).✅
+   5).->DELETE /orders/:id: Cancel an order.✅
+
+6. Review and Rating
+   1).->POST /products//review: Add a review to a product.
+   2).->GET /products//reviews: Get all reviews for a product.
+   3).->DELETE /products//reviews/:reviewId: Delete a review (admin or the review author).
+
+
